@@ -5,6 +5,7 @@
 body {
   display: flex; 
   align-items: right; 
+    vertical-align: middle;
   justify-content: space-evenly; 
   font-family: "urbanist";
   background-image: url("./adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
@@ -19,8 +20,9 @@ body {
 .timer-circle {
     vertical-align: middle;
   border-radius: 50%; 
-  width: 400px; 
-  height: 400px; 
+    padding: 70px;
+  width: 450px; 
+  height: 450px; 
   margin: auto;
   display: flex; 
   align-items: center; 
