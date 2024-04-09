@@ -17,7 +17,7 @@ body {
   
 }
 .timer-circle {
-    padding: 100px;
+    vertical-align: middle;
   border-radius: 50%; 
   width: 400px; 
   height: 400px; 
@@ -60,6 +60,7 @@ body {
 
 .title {
   font-family: "urbanist";
+    vertical-align: middle;
   color: white;
   font-size: 75px;
     text-align: center;
