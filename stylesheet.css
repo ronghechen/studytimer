@@ -11,10 +11,14 @@ body {
   align-items: center; 
   justify-content: center; 
   font-family: "urbanist-xtrabold";
+  background-image: url("./adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
 }
 .main {
   text-align: center; 
-  background-image: url("./adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+  
 }
 .timer-circle {
   border-radius: 70%; 
