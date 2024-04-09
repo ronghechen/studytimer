@@ -29,7 +29,8 @@ body {
   align-items: center; 
   justify-content: center;
   font-size: 175px;
-  border: 25px solid; 
+  color: white; 
+  border: 25px solid #ffffff; 
   
 }
 
