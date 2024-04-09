@@ -17,10 +17,10 @@ body {
   
 }
 .timer-circle {
-    padding: 70px;
-  border-radius: 70%; 
-  width: 500px; 
-  height: 500px; 
+    padding: 100px;
+  border-radius: 50%; 
+  width: 400px; 
+  height: 400px; 
   margin: auto;
   display: flex; 
   align-items: center; 
@@ -32,7 +32,7 @@ body {
 }
 
 .control-buttons { 
-    margin-top: 75px; 
+    margin-top: 70px; 
     display: flex; 
     justify-content: space-evenly; 
 } 
