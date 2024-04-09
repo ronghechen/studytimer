@@ -49,4 +49,6 @@ body {
 
 .title {
   font-family: "Urbanist";
+  color: white; 
+  font-size: 75px;
 }
