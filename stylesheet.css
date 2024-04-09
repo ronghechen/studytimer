@@ -51,6 +51,10 @@ body {
     transition: background-color 0.2s; 
 }
 
+.control-buttons a {
+  color: white;
+}
+
 .title {
   font-family: "urbanist";
   color: white; 
