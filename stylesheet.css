@@ -4,8 +4,8 @@
   }
 body {
   display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  align-items: right; 
+  justify-content: space-evenly; 
   font-family: "urbanist";
   background-image: url("./adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
   background-repeat: no-repeat;
