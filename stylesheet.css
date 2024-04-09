@@ -41,7 +41,8 @@ body {
 } 
 
 .control-buttons button { 
-    border: none; 
+    border: 5px solid #ffffff;
+    background-color: transparent;
     padding: 15px 25px; 
     border-radius: 10px; 
     cursor: pointer; 
