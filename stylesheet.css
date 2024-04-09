@@ -2,6 +2,10 @@
     font-family: "urbanist";
     src: url("Urbanist/static/Urbanist-Light.ttf") format("truetype");
   }
+@font-face {
+    font-family: "vegawanty";
+    src; url("ttf/vegawanty-vegawanty-regular-400.ttf") format("truetype");
+}
 body {
   display: flex; 
   align-items: right; 
@@ -61,7 +65,7 @@ body {
 }
 
 .title {
-  font-family: "urbanist";
+  font-family: "vegawanty";
     vertical-align: middle;
   color: white;
   font-size: 75px;
