@@ -48,6 +48,12 @@ body {
     cursor: pointer; 
 } 
 
+.control-buttons button:hover { 
+    background-color: ##ffd1e6;
+    opacity: 0.5;
+    transition: background-color 0.2s; 
+}
+
 .title {
   font-family: "Urbanist";
   color: white; 
