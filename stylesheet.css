@@ -2,10 +2,15 @@
       font-family: "Urbanist";
       src: url("./Urbanist/static/Urbanist-BoldItalic.ttf") format("truetype");
     }
+  @font-face {
+    font-family: "urbanist-body";
+    src: url("./Urbanist/static/Urbanist-Regular.ttf") format("truetype");
+  }
 body {
   display: flex; 
   align-items: center; 
   justify-content: center; 
+  font-family: "urbanist-body";
 }
 .title {
   font-family: "Urbanist";
