@@ -41,10 +41,10 @@ body {
 } 
 
 .control-buttons button { 
-    border: 5px solid #ffffff;
+    border: 1px solid #ffffff;
     background-color: transparent;
     padding: 15px 25px; 
-    border-radius: 10px; 
+    border-radius: 1000px; 
     cursor: pointer; 
 } 
 
