@@ -1,6 +1,6 @@
   @font-face {
       font-family: "Urbanist";
-      src: url("./css:fonts/BebasNeue-Regular.ttf") format("truetype");
+      src: url("./Urbanist/static/Urbanist-BoldItalic.ttf") format("truetype");
     }
 
 .title {
