@@ -2,8 +2,11 @@
       font-family: "Urbanist";
       src: url("./Urbanist/static/Urbanist-BoldItalic.ttf") format("truetype");
     }
-
+body {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
 .title {
   font-family: "Urbanist";
-  text-align: center;
 }
