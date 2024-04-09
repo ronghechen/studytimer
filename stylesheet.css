@@ -27,6 +27,13 @@ body {
   border: 25px solid; 
   
 }
+
+.control-buttons { 
+    margin-top: 100px; 
+    display: flex; 
+    justify-content: space-evenly; 
+} 
+
 .title {
   font-family: "Urbanist";
 }
