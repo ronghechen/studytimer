@@ -35,6 +35,13 @@ body {
     justify-content: space-evenly; 
 } 
 
+.control-buttons button { 
+    border: none; 
+    padding: 20px 30px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+} 
+
 .title {
   font-family: "Urbanist";
 }
