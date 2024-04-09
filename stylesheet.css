@@ -41,9 +41,11 @@ body {
     border: 1px solid #ffffff;
     background-color: transparent;
     font-family: "urbanist";
-    padding: 15px 25px; 
+    padding: 15px 32px; 
     border-radius: 1000px; 
-    cursor: pointer; 
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
 } 
 
 .control-buttons button:hover { 
