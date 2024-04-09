@@ -3,28 +3,28 @@
       src: url("./Urbanist/static/Urbanist-BoldItalic.ttf") format("truetype");
     }
   @font-face {
-    font-family: "urbanist-body";
-    src: url("./Urbanist/static/Urbanist-Regular.ttf") format("truetype");
+    font-family: "urbanist-xtrabold";
+    src: url("Urbanist/static/Urbanist-ExtraBold.ttf") format("truetype");
   }
 body {
   display: flex; 
   align-items: center; 
   justify-content: center; 
-  font-family: "urbanist-body";
+  font-family: "urbanist-xtrabold";
 }
 .main {
   text-align: center; 
   background-image: url("./adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
 }
 .timer-circle {
-  border-radius: 85%; 
+  border-radius: 70%; 
   width: 500px; 
   height: 500px; 
   margin: auto;
   display: flex; 
   align-items: center; 
   justify-content: center;
-  font-size: 75px;
+  font-size: 175px;
   border: 25px solid; 
   
 }
