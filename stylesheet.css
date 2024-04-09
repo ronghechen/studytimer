@@ -17,6 +17,7 @@ body {
   
 }
 .timer-circle {
+    padding: 70px;
   border-radius: 70%; 
   width: 500px; 
   height: 500px; 
@@ -60,5 +61,5 @@ body {
   color: white;
   font-size: 75px;
     text-align: center;
-    padding: 200px;
+    padding: 300px;
 }
