@@ -27,7 +27,7 @@ body {
     padding: 100px;
   width: 450px; 
   height: 450px; 
-  margin-top: 5%
+  margin: auto;
   display: flex; 
   align-items: center; 
   justify-content: center;
@@ -38,7 +38,7 @@ body {
 }
 
 .control-buttons { 
-    margin-top: 70px; 
+    margin-top: 50px; 
     display: flex; 
     justify-content: space-evenly; 
 } 
