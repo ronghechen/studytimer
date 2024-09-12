@@ -22,8 +22,25 @@ body {
 }
 
 .main {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
+
+
+.title {
+    font-family: "vegawanty";
+    color: white;
+    font-size: 75px;
+    margin: 0;
+    flex: 1; 
+    text-align: left;
+}
+
 
 .timer-circle {
     border-radius: 50%;
@@ -37,14 +54,18 @@ body {
     font-size: 10vw;
     color: white;
     border: 5px solid #ffffff;
-    margin: 0 auto;
+    margin: 0;
+    flex: 1; 
 }
+
 
 .control-buttons {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 50%;
+    flex-direction: row;
+    margin: 20px auto;
 }
 
 .control-buttons button {
@@ -54,7 +75,7 @@ body {
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 16px; 
     color: white;
     transition: background-color 0.2s;
 }
@@ -68,26 +89,29 @@ body {
     color: white;
 }
 
-.title {
-    font-family: "vegawanty";
-    color: white;
-    font-size: 10vw;
-    text-align: center;
-    margin: 0;
-}
-/* media queries */
 @media (max-width: 768px) {
+    /* Stack the title and timer on smaller screens */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .timer-circle {
         width: 60vw;
         height: 60vw;
         font-size: 8vw;
     }
+
     .control-buttons button {
         font-size: 5vw;
         padding: 8px 16px;
     }
+
     .title {
         font-size: 12vw;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -97,10 +121,12 @@ body {
         height: 70vw;
         font-size: 6vw;
     }
+
     .control-buttons button {
         font-size: 6vw;
         padding: 5px 10px;
     }
+
     .title {
         font-size: 15vw;
     }
