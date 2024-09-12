@@ -79,6 +79,14 @@ body {
   transform: translateY(-50%);
 }
 
+.verticalCenterText {
+  margin-left: 10%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /*media queries*/
 
 @media (max-width: 768px) {
