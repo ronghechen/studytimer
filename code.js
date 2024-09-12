@@ -26,7 +26,7 @@ function update() {
   timerElem.textContent = format(min, sec);
   if (min == 0 && sec == 0) {
     clearInterval(timer);
-    alert('time\'s up !!');
+    alert('time\'s up !');
   } else if (paused == false) {
     if (sec > 0) {
       sec--;
@@ -48,7 +48,7 @@ function restart() {
   start(); 
 }
 function setTime() {
-  const timeSetByUser = prompt('Enter time (in minutes):');
+  const timeSetByUser = prompt('enter time (in mins):');
   if (!isNaN (timeSetByUser) && timeSetByUser > 0)
   {
     timeEntered = parseInt(timeSetByUser);
@@ -62,7 +62,7 @@ function setTime() {
     pause.textContent = 'pause';
     start();
   } else {
-    alert('invalid time!!');
+    alert('invalid time!');
   }
 }
 start;
