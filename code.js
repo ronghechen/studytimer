@@ -1,33 +1,56 @@
-let timer;
-let min = 30;
-let sec = 0;
-let paused = false;
-let timeSetByUser = null;
+let timeModal = document.getElementById('timeModal');
+let alertModal = document.getElementById('alertModal');
+let closeBtns = document.querySelectorAll('.close');
+let timeInputElem = document.getElementById('timeInput');
 
-function format() {
-  return `${String(min).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+closeBtns.forEach((btn) => {
+  btn.onclick = function() {
+    timeModal.style.display = "none";
+    alertModal.style.display = "none";
+  };
+});
+
+
+function setTime() {
+  timeModal.style.display = "flex"; 
 }
-function pauseUnpause() {
-  const pauseButton = document.querySelector('.control-buttons button');
-  paused = !paused;
-  if (paused == true) {
+
+function applyTime() {
+  let timeSetByUser = parseInt(timeInputElem.value);
+  if (!isNaN(timeSetByUser) && timeSetByUser > 0) {
+    min = timeSetByUser;
+    sec = 0;
+    paused = false;
+    const timerElem = document.getElementById('timer');
+    timerElem.textContent = format(min, sec);
     clearInterval(timer);
-    pauseButton.textContent = 'unpause';
-  } else {
-    start();
+    const pauseButton = document.querySelector('.control-buttons button');
     pauseButton.textContent = 'pause';
+    start();
+    timeModal.style.display = "none"; 
+  } else {
+    alert('Invalid time!');
   }
 }
-function start() {
-  timer = setInterval(update, 1000);
+
+
+function showAlert() {
+  alertModal.style.display = "flex"; 
 }
+
+
+function closeAlert() {
+  alertModal.style.display = "none"; 
+}
+
+
 function update() {
   const timerElem = document.getElementById('timer');
   timerElem.textContent = format(min, sec);
   if (min == 0 && sec == 0) {
     clearInterval(timer);
-    alert('time\'s up !');
-  } else if (paused == false) {
+    showAlert(); 
+  } else if (!paused) {
     if (sec > 0) {
       sec--;
     } else {
@@ -36,33 +59,3 @@ function update() {
     }
   }
 }
-function restart() {
-  clearInterval(timer);
-  min = timeEntered || 30;
-  sec = 0;
-  paused = false;
-  const timerElem = document.getElementById('timer');
-  timerElem.textContent = format(min, sec);
-  const pauseButton = document.querySelector('.control-buttons button');
-  pauseButton.textContent = 'pause'; 
-  start(); 
-}
-function setTime() {
-  const timeSetByUser = prompt('enter time (in mins):');
-  if (!isNaN (timeSetByUser) && timeSetByUser > 0)
-  {
-    timeEntered = parseInt(timeSetByUser);
-    min = timeSetByUser;
-    sec = 0;
-    paused = false;
-    const timerElem = document.getElementById('timer');
-    timerElem.textContent = format(min, sec);
-    clearInterval(timer);
-    const pause = document.querySelector('.control-buttons button');
-    pause.textContent = 'pause';
-    start();
-  } else {
-    alert('invalid time!');
-  }
-}
-start;
