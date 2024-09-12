@@ -80,7 +80,7 @@ body {
 }
 
 .verticalCenterText {
-  margin-left: 10%;
+  margin-left: -50%;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
