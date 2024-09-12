@@ -1,74 +1,107 @@
 @font-face {
     font-family: "urbanist";
     src: url("Urbanist/static/Urbanist-Light.ttf") format("truetype");
-  }
+}
 @font-face {
     font-family: "vegawanty";
-    src; url("ttf/vegawanty-vegawanty-regular-400.ttf") format("truetype");
+    src: url("ttf/vegawanty-vegawanty-regular-400.ttf") format("truetype");
 }
+
 body {
-  display: flex; 
-  align-items: right; 
-    vertical-align: middle;
-  justify-content: space-evenly; 
-  font-family: "urbanist";
-  background-image: url("./sean-sinclair-ozqUdQZbjBw-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "urbanist";
+    background-image: url("./sean-sinclair-ozqUdQZbjBw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
 }
+
 .main {
-  text-align: center; 
-  
+    text-align: center;
 }
+
 .timer-circle {
-    vertical-align: middle;
-  border-radius: 50%; 
-    padding: 100px;
-  width: 450px; 
-  height: 450px; 
-  margin: auto;
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  font-size: 150px;
-  color: white; 
-  border: 5px solid #ffffff; 
-  
+    border-radius: 50%;
+    width: 45vw;
+    height: 45vw;
+    max-width: 450px;
+    max-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+    color: white;
+    border: 5px solid #ffffff;
+    margin: 0 auto;
 }
 
-.control-buttons { 
-    margin-top: 50px; 
-    display: flex; 
-    justify-content: space-evenly; 
-} 
+.control-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
 
-.control-buttons button { 
+.control-buttons button {
     border: 1px solid #ffffff;
     background-color: transparent;
     font-family: "urbanist";
-    padding: 15px 32px; 
-    border-radius: 1000px; 
+    padding: 10px 20px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 4vw;
     color: white;
-} 
+    transition: background-color 0.2s;
+}
 
-.control-buttons button:hover { 
-    background-color: ##ffd1e6;
+.control-buttons button:hover {
+    background-color: #ffd1e6;
     opacity: 0.5;
-    transition: background-color 0.2s; 
 }
 
 .control-buttons a {
-  color: white;
+    color: white;
 }
 
 .title {
-  font-family: "vegawanty";
-    vertical-align: middle;
-  color: white;
-  font-size: 75px;
+    font-family: "vegawanty";
+    color: white;
+    font-size: 10vw;
     text-align: center;
-    padding: 300px;
+    margin: 0;
+}
+/* media queries */
+@media (max-width: 768px) {
+    .timer-circle {
+        width: 60vw;
+        height: 60vw;
+        font-size: 8vw;
+    }
+    .control-buttons button {
+        font-size: 5vw;
+        padding: 8px 16px;
+    }
+    .title {
+        font-size: 12vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer-circle {
+        width: 70vw;
+        height: 70vw;
+        font-size: 6vw;
+    }
+    .control-buttons button {
+        font-size: 6vw;
+        padding: 5px 10px;
+    }
+    .title {
+        font-size: 15vw;
+    }
 }
