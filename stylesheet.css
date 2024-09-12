@@ -3,8 +3,8 @@
     src: url("Urbanist/static/Urbanist-Light.ttf") format("truetype");
   }
 @font-face {
-    font-family: "vegawanty";
-    src: url("ttf/vegawanty-vegawanty-regular-400.ttf") format("truetype");
+    font-family: "synkopy";
+    src: url("Synkopy-Flipside.otf") format("truetype");
 }
 body {
   display: flex; 
@@ -65,7 +65,7 @@ body {
 }
 
 .title {
-  font-family: "vegawanty";
+  font-family: "synkopy";
   color: white;
   font-size: 75px;
     text-align: center;
