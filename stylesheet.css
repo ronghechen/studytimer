@@ -123,11 +123,12 @@ body {
 }
 
 button {
-  background-color: #28a745;
+  background-color: transparent;
   color: white;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 1000px; 
   cursor: pointer;
 }
 
