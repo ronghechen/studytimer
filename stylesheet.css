@@ -18,7 +18,8 @@ body {
   background-size: cover;
 }
 .main {
-  text-align: center; 
+  text-align: center;
+    align-items: center;
   
 }
 .timer-circle {
