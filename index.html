@@ -23,6 +23,21 @@
       </div> <!--vertical center-->
       </div><!--ctrl buttons-->
     </div><!--main-->
+    <div id="timeModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Enter time (in mins):</p>
+    <input type="number" id="timeInput" min="1">
+    <button onclick="applyTime()">Set Time</button>
+  </div>
+</div>
+<div id="alertModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Time's up!</p>
+    <button onclick="closeAlert()">OK</button>
+  </div>
+</div>
     <script src="code.js"></script> 
   </body>
 </html>
