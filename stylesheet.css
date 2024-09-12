@@ -99,7 +99,7 @@ body {
     .timer-circle {
       width: 45vw; 
       height: 45vw; 
-      margin: auto;
+      margin-right: 1%;
       display: flex; 
       align-items: center; 
       justify-content: center;
