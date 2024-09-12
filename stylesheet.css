@@ -80,7 +80,7 @@ body {
 }
 
 .verticalCenterText {
-  margin-left: -50%;
+  margin-left: -30%;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -116,5 +116,9 @@ body {
         /*font-size: 12vw;
         text-align: center;*/
         display: none;
+    }
+
+    .verticalCenterText {
+      display: none;
     }
 }
