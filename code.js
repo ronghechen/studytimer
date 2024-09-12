@@ -1,3 +1,9 @@
+let timer;
+let min = 30;
+let sec = 0;
+let paused = false;
+let timeEntered = 30;
+
 let timeModal = document.getElementById('timeModal');
 let alertModal = document.getElementById('alertModal');
 let closeBtns = document.querySelectorAll('.close');
@@ -29,7 +35,7 @@ function applyTime() {
     start();
     timeModal.style.display = "none"; 
   } else {
-    alert('Invalid time!');
+    alert('invalid time!');
   }
 }
 
@@ -43,6 +49,25 @@ function closeAlert() {
   alertModal.style.display = "none"; 
 }
 
+function format() {
+  return `${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
+}
+
+function pauseUnpause() {
+  const pauseButton = document.querySelector('.control-buttons button');
+  paused = !paused;
+  if (paused) {
+    clearInterval(timer);
+    pauseButton.textContent = 'unpause';
+  } else {
+    start();
+    pauseButton.textContent = 'pause';
+  }
+}
+
+function start() {
+  timer = setInterval(update, 1000);
+}
 
 function update() {
   const timerElem = document.getElementById('timer');
@@ -58,4 +83,16 @@ function update() {
       min--;
     }
   }
+}
+
+function restart() {
+  clearInterval(timer);
+  min = timeEntered || 30; 
+  sec = 0;
+  paused = false;
+  const timerElem = document.getElementById('timer');
+  timerElem.textContent = format(min, sec);
+  const pauseButton = document.querySelector('.control-buttons button');
+  pauseButton.textContent = 'pause';
+  start(); 
 }
