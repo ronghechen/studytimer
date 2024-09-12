@@ -8,33 +8,25 @@
 }
 body {
   display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  align-items: right; 
+    vertical-align: middle;
+  justify-content: space-evenly; 
   font-family: "urbanist";
   background-image: url("./sean-sinclair-ozqUdQZbjBw-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
-    height: 100vh;
-    margin: 0;
-    overflow-x: hidden;
 }
 .main {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+  text-align: center;
   
 }
 .timer-circle {
+    vertical-align: middle;
   border-radius: 50%; 
     padding: 100px;
-  width: 45vw;
-    height: 45vw;
-    max-width: 450px;
-    max-height: 450px;
+  width: 450px; 
+  height: 450px; 
   margin: auto;
   display: flex; 
   align-items: center; 
@@ -45,19 +37,11 @@ body {
   
 }
 
-/*.control-buttons { 
+.control-buttons { 
     margin-top: 50px; 
     display: flex; 
     justify-content: space-evenly; 
-} */
-
-.control-buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 400px;
-}
+} 
 
 .control-buttons button { 
     border: 1px solid #ffffff;
@@ -68,7 +52,6 @@ body {
     cursor: pointer;
     font-size: 16px;
     color: white;
-    transition: background-color 0.2s;
 } 
 
 .control-buttons button:hover { 
@@ -108,10 +91,22 @@ body {
 
 @media (max-width: 768px) {
     body {
-        height: auto;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      font-family: "urbanist";
+      background-image: url("./sean-sinclair-ozqUdQZbjBw-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+        height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
     }
     .main {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .timer-circle {
