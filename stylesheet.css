@@ -7,19 +7,24 @@
     src: url("Synkopy-Flipside.otf") format("truetype");
 }
 body {
-  display: flex; 
-  align-items: right; 
-    vertical-align: middle;
-  justify-content: space-evenly; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
   font-family: "urbanist";
   background-image: url("./sean-sinclair-ozqUdQZbjBw-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
+  margin: 0; 
 }
+
 .main {
-  text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 .timer-circle {
     vertical-align: middle;
@@ -68,24 +73,8 @@ body {
   font-family: "synkopy";
   color: white;
   font-size: 75px;
-    text-align: center;
 }
 
-.verticalCenter {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.verticalCenterText {
-  margin-left: -40%;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
 .modal {
   display: none; 
@@ -178,8 +167,3 @@ button:hover {
         text-align: center;*/
         display: none;
     }
-
-    .verticalCenterText {
-      margin-left: 0%;
-    }
-}
