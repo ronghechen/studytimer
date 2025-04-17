@@ -73,6 +73,7 @@ body {
   font-family: "synkopy";
   color: white;
   font-size: 75px;
+    margin-top: -30px;
 }
 
 
@@ -163,7 +164,7 @@ button:hover {
     }
 
     .title {
-        /*font-size: 12vw;
+        margin-top: 0;
         text-align: center;*/
         display: none;
     }
